@@ -44,7 +44,6 @@ resource control
 ```text
 Path2Win-LPL-Pregame-Win-Prediction/
 ├── README.md
-├── requirements.txt
 ├── data/
 │   └── LPL_SummerSeason_2024_Player.csv
 ├── scripts/
