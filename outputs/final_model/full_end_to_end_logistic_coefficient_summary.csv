@@ -1,0 +1,6 @@
+variant,feature,mean_coef,mean_abs_coef,selected_n_folds
+M1plusM2plusRWTS_indices_logistic,intercept_beta0,0.17433046053558823,0.17433046053558823,4
+M1plusM2plusRWTS_indices_logistic,idx_resource_control,0.127448747014784,0.127448747014784,4
+M1plusM2plusRWTS_indices_logistic,idx_early_lane,0.12183313266586424,0.12183313266586424,4
+M1plusM2plusRWTS_indices_logistic,idx_objective_control,0.10645371064540463,0.10645371064540463,4
+M1plusM2plusRWTS_indices_logistic,idx_fight_control,0.10547793074108452,0.10547793074108452,4

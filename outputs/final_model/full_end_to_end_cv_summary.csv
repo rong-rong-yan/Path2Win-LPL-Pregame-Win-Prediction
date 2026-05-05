@@ -1,1 +1,2 @@
-
+variant,model_type,n_folds,n_features,test_logloss_mean,test_logloss_std,test_brier_mean,test_brier_std,test_auc_mean,test_auc_std,test_accuracy_tuned_mean,test_accuracy_tuned_std,test_accuracy_0_5_mean,test_accuracy_0_5_std,threshold_mean
+M1plusM2plusRWTS_indices_logistic,logistic,4,4.0,0.6658136199282185,0.015923550354291043,0.2363711063949922,0.007949479972347483,0.619718366605285,0.05252276202439564,0.6011904761904762,0.022795883518008077,0.625,0.045070701157144996,0.5075

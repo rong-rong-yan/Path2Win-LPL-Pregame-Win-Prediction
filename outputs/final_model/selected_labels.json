@@ -1,0 +1,32 @@
+{
+  "TOP": [
+    "CSM",
+    "DMG%",
+    "GPM",
+    "DPM"
+  ],
+  "JUNGLE": [
+    "CSM",
+    "KP%",
+    "GOLD%",
+    "Kills"
+  ],
+  "MID": [
+    "KP%",
+    "DMG%",
+    "Assists",
+    "GD@15"
+  ],
+  "ADCARRY": [
+    "CSM",
+    "GOLD%",
+    "DMG%",
+    "DPM"
+  ],
+  "SUPPORT": [
+    "VSPM",
+    "VS%",
+    "WPM",
+    "GOLD%"
+  ]
+}
