@@ -1,4 +1,4 @@
-````markdown
+
 # Path2Win: Interpretable Pregame Win Prediction for Professional League of Legends
 
 This repository contains the code, data, and output summaries for **Path2Win**, an interpretable pregame win-probability model for professional League of Legends matches from the 2024 LPL Summer Season.
