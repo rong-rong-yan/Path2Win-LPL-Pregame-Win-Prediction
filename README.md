@@ -1,3 +1,4 @@
+````markdown
 # Path2Win: Interpretable Pregame Win Prediction for Professional League of Legends
 
 This repository contains the code, data, and output summaries for **Path2Win**, an interpretable pregame win-probability model for professional League of Legends matches from the 2024 LPL Summer Season.
@@ -47,24 +48,22 @@ Path2Win-LPL-Pregame-Win-Prediction/
 │   ├── model8_final_FULL_END_TO_END_m1_m2_rwts_indices_logistic_v2.py
 │   ├── model9_patch_aware_win_condition_compare.py
 │   └── model10_hardcoded_patch_win_conditions_compare.py
-├── outputs/
-│   ├── final_model/
-│   │   ├── features_A_original_model2_rebuilt.csv
-│   │   ├── full_end_to_end_cv_summary.csv
-│   │   ├── full_end_to_end_fold_results.csv
-│   │   ├── full_end_to_end_test_predictions.csv
-│   │   ├── full_end_to_end_integrated_features.csv
-│   │   ├── full_end_to_end_feature_lists.json
-│   │   ├── full_end_to_end_condition_prediction_summary.csv
-│   │   ├── full_end_to_end_condition_index_values.csv
-│   │   ├── full_end_to_end_logistic_coefficient_summary.csv
-│   │   └── full_end_to_end_rwts_player_ratings.csv
-│   ├── patch_aware_extension/
-│   │   └── model9_cv_summary.csv
-│   └── hardcoded_condition_extension/
-│       └── model10_cv_summary.csv
-└── report/
-    └── path2win_final_report.tex
+└── outputs/
+    ├── final_model/
+    │   ├── features_A_original_model2_rebuilt.csv
+    │   ├── full_end_to_end_cv_summary.csv
+    │   ├── full_end_to_end_fold_results.csv
+    │   ├── full_end_to_end_test_predictions.csv
+    │   ├── full_end_to_end_integrated_features.csv
+    │   ├── full_end_to_end_feature_lists.json
+    │   ├── full_end_to_end_condition_prediction_summary.csv
+    │   ├── full_end_to_end_condition_index_values.csv
+    │   ├── full_end_to_end_logistic_coefficient_summary.csv
+    │   └── full_end_to_end_rwts_player_ratings.csv
+    ├── patch_aware_extension/
+    │   └── model9_cv_summary.csv
+    └── hardcoded_condition_extension/
+        └── model10_cv_summary.csv
 ```
 
 The exact structure may vary slightly depending on which output files are included, but the main reproducibility files are the raw CSV, the final end-to-end script, and the final output summaries.
@@ -378,12 +377,6 @@ Tests hard-coded patch-specific and expanded-condition final layers.
 
 ## How to run
 
-Install dependencies:
-
-```bash
-pip install -r requirements.txt
-```
-
 Run the final end-to-end model:
 
 ```bash
@@ -434,39 +427,6 @@ Extension summaries:
 ```text
 outputs/patch_aware_extension/model9_cv_summary.csv
 outputs/hardcoded_condition_extension/model10_cv_summary.csv
-```
-
----
-
-## Report
-
-The final written report is located in:
-
-```text
-report/path2win_final_report.tex
-```
-
-The report describes:
-
-```text
-problem formulation
-data source and cleaning
-feature engineering
-validation design
-leakage control
-model construction
-results
-alternative model comparisons
-assumptions and limitations
-reproducibility
-```
-
-```
-
-These are listed in:
-
-```text
-requirements.txt
 ```
 
 ---
