@@ -461,18 +461,6 @@ assumptions and limitations
 reproducibility
 ```
 
----
-
-## Requirements
-
-The main Python packages are:
-
-```text
-numpy
-pandas
-scikit-learn
-catboost
-scipy
 ```
 
 These are listed in:
