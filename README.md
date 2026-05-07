@@ -246,51 +246,6 @@ The final model is intentionally simple and interpretable:
 
 ---
 
-## Main results
-
-The final four-index Path2Win model achieved:
-
-| Metric                                 |   Mean |
-| -------------------------------------- | -----: |
-| Logloss                                | 0.6658 |
-| Brier score                            | 0.2364 |
-| AUC                                    | 0.6197 |
-| Accuracy at validation-tuned threshold | 0.6012 |
-| Accuracy at threshold 0.5              | 0.6250 |
-
-Final logistic coefficient summary:
-
-| Feature                 | Mean coefficient |
-| ----------------------- | ---------------: |
-| Intercept               |            0.174 |
-| Resource-control index  |            0.127 |
-| Early-lane index        |            0.122 |
-| Objective-control index |            0.106 |
-| Fight-control index     |            0.105 |
-
-All four condition-index coefficients are positive, which is directionally consistent with the game: predicted advantages in early lane, objectives, fights, and resources all increase blue-side win probability.
-
----
-
-## Alternative model comparisons
-
-Several alternative and robustness models were tested.
-
-Representative comparison:
-
-| Model                                           | Final features | Logloss | Brier |   AUC | Acc@0.5 |
-| ----------------------------------------------- | -------------: | ------: | ----: | ----: | ------: |
-| Final four-index Path2Win                       |              4 |   0.666 | 0.236 | 0.620 |   0.625 |
-| Direct CatBoost on 143 pregame features         |            143 |   0.663 | 0.235 | 0.649 |   0.583 |
-| Hard-coded global top-20 + interactions         |            190 |   0.663 | 0.235 | 0.637 |   0.595 |
-| Patch-aware pooled top-10                       |           42.5 |   0.687 | 0.246 | 0.584 |   0.583 |
-| Patch-aware pooled top-20                       |           69.0 |   0.695 | 0.249 | 0.573 |   0.607 |
-| Hard-coded separate patch top-20 + interactions |              — |   0.685 | 0.238 | 0.630 |   0.607 |
-
-The more complex models sometimes slightly improved probability metrics, but they required substantially more features and reduced interpretability. The final four-index Path2Win model was selected because it provides the best balance between interpretability, leakage control, stability, and predictive performance.
-
----
-
 ## Validation design
 
 The model is evaluated using chronological rolling train/validation/test splits.
